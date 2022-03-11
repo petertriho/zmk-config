@@ -54,14 +54,14 @@
 // ------------------------------------------------------------------------------------------------------------
 // |     |  F1  |  F2  |  F3   |  F4   |  F5  |                |  F6  |  F7  |  F8   |  F9  |  F10  |  F11  |
 // |     | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                | PGUP |  END |   ^   | HOME |  INS  |  F12  |
-// |     | RGBT | RGBE- | RGB+ |  BR-  |  BR+ |                | PGDN |   <- |   v   | ->   |  DEL  | C/CAPS|
-// |     | UNDO | CUT  | COPY  | PASTE |BTCLR |      |  |      | SCRL | PRVS | PLAY  | NEXT |  PSCR |       |
+// |     | RGBT | RGB- | RGB+  |  BR-  |  BR+ |                | PGDN |   <- |   v   | ->   |  DEL  | C/CAPS|
+// |     |BTCLR | HUD  | HUI   |  SAD  |  SAI |      |  |      | SCRL | PRVS | PLAY  | NEXT |  PSCR |       |
 //              |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
 &trans &kp F1          &kp F2          &kp F3          &kp F4          &kp F5                         &kp F6             &kp F7     &kp F8   &kp F9     &kp F10   &kp F11
 &trans &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4                   &kp PG_UP          &kp END    &kp UP   &kp HOME   &kp INS   &kp F12
 &trans &rgb_ug RGB_TOG &rgb_ug RGB_EFR &rgb_ug RGB_EFF &rgb_ug RGB_BRD &rgb_ug RGB_BRI                &kp PG_DN          &kp LEFT   &kp DOWN &kp RIGHT  &kp DEL   &mt RCTRL CLCK
-&trans &kp K_UNDO      &kp K_CUT       &kp K_COPY      &kp K_PASTE     &bt BT_CLR      &trans  &trans &kp SLCK           &kp K_PREV &kp K_PP &kp K_NEXT &kp PSCRN &trans
+&trans &bt BT_CLR      &rgb_ug RGB_HUD &rgb_ug RGB_HUI &rgb_ug RGB_SAD &rgb_ug RGB_SAI &trans  &trans &kp SLCK           &kp C_PREV &kp C_PP &kp C_NEXT &kp PSCRN &trans
                        &trans          &trans          &trans          &trans          &trans  &trans &ext_power EP_TOG  &trans     &trans   &trans
             >;
 
